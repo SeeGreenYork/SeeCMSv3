@@ -285,7 +285,7 @@ CREATE TABLE IF NOT EXISTS `setting` (
 
 INSERT INTO `setting` (`id`, `name`, `value`) VALUES
 (1, 'email', '<html xmlns="http://www.w3.org/1999/xhtml">\r\n<head>\r\n<title></title>\r\n<!-- hotmail fix start -->\r\n<style type="text/css">\r\n.ReadMsgBody\r\n{ width: 100%;}\r\n.ExternalClass\r\n{width: 100%;}\r\np {margin-bottom: 0em;}\r\na {color: #0073c9;}\r\n</style>\r\n<!-- hotmail fix end -->\r\n</head>\r\n<body style="background: #fff;">\r\n<table cellspacing="0" cellpadding="0" width="100%" border="0" style="width: 100%; background: #fff; font-family: arial, sans-serif">\r\n<tr>\r\n<td>\r\n<EMAILCONTENT>\r\n</td>\r\n</tr>\r\n</table>\r\n</body>\r\n</html>'),
-(2, 'version', '3.47'),
+(2, 'version', '3.474'),
 (3, 'editBarV2', '1'),
 (4, 'friendlyImageURLs', '1');
 

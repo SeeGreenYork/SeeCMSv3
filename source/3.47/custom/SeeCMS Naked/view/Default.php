@@ -1,0 +1,1 @@
+<p>SeeCMS - Hello world!</p>

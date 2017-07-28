@@ -1,0 +1,1 @@
+Core views would live in here, if there were any.

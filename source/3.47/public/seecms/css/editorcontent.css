@@ -1,0 +1,20 @@
+/* SeeCMS is a website content management system
+// @author See Green <http://www.seegreen.uk>
+// @license http://www.seecms.net/seecms-licence.txt GNU GPL v3.0 License
+// @copyright 2015 See Green Media Ltd
+*/
+body {font-size: 81.25%; font-family: 'arial', sans-serif; font-style: normal; }
+
+h1, h2, h3 { margin: 0; padding: 0; font-weight: normal; line-height: 140%;}
+h1 {font-size: 160%; font-weight: bold; padding: 0 0 10px 0; margin: 0;}
+h2 {font-size: 120%; padding: 0; margin: 0; font-weight: normal; }
+h3 {font-size: 110%; padding: 0; margin: 0; font-weight: normal; }
+
+p {margin: 0; padding: 0 0 10px 0; font-size: 95%; line-height: 140%;}
+a {text-decoration: none;}
+
+img.seecmsimagedefault {margin: 0; display: inline;}
+img.seecmsimageleft {float: left; margin: 0 13px 0 0; display: block;}
+img.seecmsimageright {float: right; margin: 0 0 13px 0; display: block;}
+img.seecmsimagecentre {margin: 0 auto; display: block;}
+

@@ -1,0 +1,122 @@
+/* SeeCMS is a website content management system
+// @author See Green <http://www.seegreen.uk>
+// @license http://www.seecms.net/seecms-licence.txt GNU GPL v3.0 License
+// @copyright 2015 See Green Media Ltd
+*/
+p,h1,h2,h3,h4,h5 {margin: 0; padding: 0;}
+p {padding: 0 0 10px 0;}
+p.editbar {margin-top: 5px!important; cursor: pointer!important; background: #383838!important; color: #fff!important; padding: 5px 10px!important; display: block!important; font-family: arial, sans-serif!important; border-radius: 5px!important; font-size: 12px!important; line-height: 16px!important;}
+p.editbar.hideeditbar, p.editbar.emilieseditbar.hideeditbar {display: none!important;}
+p.editbar a {color: #fff!important; font-size: 12px!important; padding: 0!important; font-family: arial!important; background: none!important; text-transform: none!important; margin: 0!important;}
+p.editbar a:hover {text-decoration: underline!important;}
+.ui-dialog {z-index: 999999;}
+.mce-menu {z-index: 99999998!important;}
+.mce-floatpanel{z-index: 99999999!important;}
+
+/* NEW EDIT BAR STYLING*/
+p.editbar.emilieseditbar {margin-top: 5px!important; cursor: pointer!important; background: #383838!important; color: #fff!important; padding: 5px!important; display: block!important; font-family: arial, sans-serif!important; border-radius: 5px!important; font-size: 12px!important; position: absolute; bottom: 0; right: 0; z-index: 9999; box-sizing: border-box;}
+p.editbar.emilieseditbar a {color: #fff!important; font-size: 12px!important;}
+p.editbar.emilieseditbar a:hover {text-decoration: underline!important;}
+p.editbar.emilieseditbar span.icon {display: inline-block; font-size: 140%; height: 16px; line-height: 16px;}
+p.editbar.emilieseditbar span.text {display: none;}
+p.editbar.emilieseditbar:hover span.text {display: inline-block;}
+.editable {position: relative;}
+.seecmseditbarbackground {background: #f1f1f1;}
+/* END */
+
+::-moz-selection { background: #8d9a26; color: #fff; text-shadow: none; }
+::selection { background: #8d9a26; color: #fff; text-shadow: none; }
+textarea:focus, select:focus, input:focus { border: 1px solid #8d9a26; outline: none;}
+/* Pop ups */
+
+.mce-container-body iframe {background: #fff;}
+body {margin: 0;}
+.popup {overflow-x: hidden; padding-bottom: 20px;}
+.popup, .popup input, .popup select, .popup textarea {font-family: 'Open sans', sans-serif; font-size: 13px;}
+.popup textarea {width: 372px; box-sizing: border-box; margin: 10px auto; display: block; border: 1px solid #383838; border-radius: 5px; min-height: 100px; padding: 5px;}
+.popup textarea#html {font-family: courier;}
+div.select {background: #8d9a26; padding: 5px 10px;}
+div.select p {padding: 0;}
+div.select select {background: #fff;display: block; padding: 3px 2%; color: #383838; border: none; border-radius: 5px; width: 100%;}
+
+.hidden {padding: 10px;}
+.hidden div {/*display: none;*/}
+
+.folders {margin: 0 0 0 -10px; width: 372px;}
+.medialistinner.folders {margin: 10px auto; width: 372px;}
+.folders.externals,.folders.emails {margin: 0 0 0 0px; width: 362px;}
+.folders ul {padding: 0; margin: 3px 0 0 0; width: 100%;}
+.folders li {list-style: none; padding: 3px 2%; margin: 0; position: relative; }
+.folders li > ul { margin: 0 0 3px 2%;  list-style: none; width: 98%;}
+.folders li img {height: 18px; display: inline-block; margin: 0 5px 0 0; vertical-align: middle}
+.folders li a {font-size: 13px; text-decoration: none; color: #383838; display: block; border-radius: 5px; padding: 2px 2%;}
+.folders li a:hover {text-decoration: underline;}
+.folders li a.file {line-height: 18px;}
+.folders li a em {font-size: 11px; color: #ccc;}
+.folders li.folder, .folders.pages li {padding: 0;}
+.folders li.folder > a, .folders.pages li > a {display: block; padding: 3px 2%; margin: 0 0 3px 0; background: #ddd; color: #383838; border-radius: 5px}
+.folders li.folder > a:hover, .folders.pages li > a:hover {background: #383838; color: #fff; text-decoration: none}
+.folders ul > li {margin: 0 0 0 10px; padding: 0;}
+.folders li a.image img {width: 40px; height: auto; border-radius: 5px;}
+
+.folders li.selected {background: #8d9a26; border-radius: 5px; }
+.downloads.folders li.selected {background: orange; border-radius: 5px; }
+.folders li.folder.selected {background: none;}
+.folders li.selected a {color: #fff;}
+.downloads.folders li.selected a {color: #383838;}
+.folders li.folder.selected a {color: #383838;}
+.folders li.expand > span.arrow, .folders li.downloadexpand > span.arrow {position: absolute; top: 0; right: 2%; height: 24px; background: url(../images/expand-icon.png) no-repeat center center!important; background-size: 100%; width: 20px; cursor: pointer;}
+.folders li.expanded > span.arrow, .folders li.downloadexpanded > span.arrow {position: absolute; top: 0; right: 2%; height: 24px; background: url(../images/contract-icon.png) no-repeat center center!important; background-size: 100%; width: 20px; cursor: pointer;}
+
+.folders li.expand ul, .folders li.downloadexpand ul {display: none; margin-top: 3px;}
+.pages.folders li a.selected {background: orange;}
+
+.folders li.downloadfolder > a, .folders li.downloadexpand > a, .folders li.downloadexpanded > a {display: block; padding: 3px 2%; color: #383838; background: #cdcdcd; margin: 0 0 3px 0;}
+.folders li.downloadfolder.selected, .folders li.downloadexpand.selected, .folders li.downloadexpanded.selected {background: none; color: #383838;}
+.folders li.downloadfolder.selected > a, .folders li.downloadexpand.selected > a, .folders li.downloadexpanded.selected > a{color: #383838;}
+.folders li.downloadexpand.selected > a, .folders li.downloadexpanded.selected > a {background: orange;}
+
+.popup .downloads ul ul ul { display: none; }
+
+div.clear {display: block!important; clear: both;}
+
+.finalstep {display: none; padding: 0 10px; box-sizing: border-box; width: 100%;}
+.finalstep .select {width: 100%; margin: 10px 0 10px -10px; background: none;}
+.finalstep select{margin-bottom: 5px; border: 1px solid #383838!important;}
+a.commit {display: block; padding: 0 10px; background: #c2d347; color: #383838; height: 30px; line-height: 30px; border-radius: 5px; font-size: 15px; text-decoration: none; margin: auto; width: 352px;}
+a.commit:hover {background: #8d9a26;}
+
+input[type="text"] {width: 100%; border: 1px solid #383838; border-radius: 5px; padding: 4px 3%; box-sizing: border-box; display: block;}
+
+.hidden div { display: none; }
+.hidden a.image {width: 31.33%; float: left; margin: 1%; background: #ff9600; border-radius: 5px; }
+.hidden a.image img {width: 100%;display: block;border-radius: 5px; }
+.hidden a.image.selected img {opacity: 0.5;}
+
+.medialistinner a.image {width: 83px; height: 83px; float: left; margin: 5px; display: block; background: #ff9600; border-radius: 5px; overflow: hidden;}
+.medialistinner a.image img {width: 83px; border-radius: 5px;}
+.medialistinner a.image.selected img {opacity: 0.25;}
+
+.adfset { padding: 12px; margin: 0; }
+.adfset:nth-child(odd) {background: #dedede;}
+.adfset:nth-child(even) {background: #ababab;}
+.adfset p {font-size: 120%; padding: 0;}
+.adfset > div {margin: 0 0 12px 0; padding: 0 0 12px 0; border-bottom: 1px solid #ccc;}
+.editableADFcontentinner {margin: 0; padding: 0;}
+.adfset select {width: 100%; border-radius: 5px; border: 1px solid #383838; box-sizing: border-box; float: none;}
+a.adfselectimage, a.adfremoveimage, a.adfaddanotherset, a.deleteadfset, a.adfselectlink, a.adfselectmediafolder, a.adfremovemediafolder {display: block; border-radius: 5px; background: #8d9a26; padding: 5px; color: #fff; width: 130px; text-align: center; margin: 10px 10px 10px 0; cursor: pointer; }
+a.adfselectimage, a.adfremoveimage { display: inline-block; }
+a.adfselectmediafolder, a.adfremovemediafolder {display: inline-block; width: auto!important;}
+a.deleteadfset {background: #da0000; font-size: 80%;}
+.adfset textarea {width: 96%; padding: 10px 2%; border-radius: 5px; border: 1px solid #383838; height: 140px;}
+.adfset textarea:focus {border-color: #383838;}
+
+a#selectMediaFolderButton, a#cancelSelectMediaFolderButton {display: block; border-radius: 5px; background: #8d9a26; padding: 5px; color: #fff; width: 130px; text-align: center; margin: 10px 10px 10px 0; cursor: pointer; display: inline-block;}
+
+.adfimages .medialistinner.folders, .adflinks .folders {width: 100%;}
+
+@media(max-width: 1024px){
+	.mce-container {-webkit-overflow-scrolling: touch!important;	overflow-y: scroll!important;}
+	.mce-abs-layout {-webkit-overflow-scrolling: touch!important;	overflow-y: scroll!important;}
+	#editableRTcontent { height: auto !important; }
+}

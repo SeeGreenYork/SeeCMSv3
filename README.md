@@ -3,6 +3,68 @@ SeeCMS Content Management System
 
 ## Release notes
 
+### v3.474
+
+ADF:
+
+- Update to allow ADFs to use jQuery's UI sortable functionality
+
+- Fix permissions appearance on folder tree within posts
+
+- Fixed Website User ADF's - broken on website user edit page
+
+- Fixed bug with in page ADFs not displaying when the first ADF in the
+ADF table isn't on the page you're editing
+
+- Fixed problem with DOMdocument incorrectly assuming ISO-8859-1 content
+<br/>
+- Fixed problem with save button not appearing on media, downloads and posts
+
+
+Download:
+
+- Fix to replacing download not working
+<br />
+- Added modified field to downloads to keep track of when downloads are replaced
+
+
+HTML Forms:
+
+- Added all new HTML5 Inputs -<br />Including: <br/> Color<br/> Date<br/> dateTimeLocal<br/> Time<br/> Telephone<br/>  reset<br/>
+- Added option group compatability with SeeCMS Forms select method
+
+- Added support for reloading form fields for mult-part/form-data
+
+
+Improvement:
+
+- Speed improvement - change admin auth session from runnning multiple times per page
+
+- Added date support for negative timestamps
+
+- Added ability to disable CORS ( Cross Origin Resource Sharing ) and turned off by default
+
+- Added styling to plugin navigation
+
+
+Permissions:
+
+- Allow Permissions to be set on protected pages
+
+
+Styling:
+
+- Added general styling button within the CMS
+
+- Tweaked in page Routes display
+
+
+Website Users:
+
+- Added Logindate showing when users have logged in
+
+- Added creationdate and modifieddate to self update method
+
 
 
 ### v3.463
